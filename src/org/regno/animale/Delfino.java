@@ -2,7 +2,7 @@ package org.regno.animale;
 
 public class Delfino extends Animale{
 	
-private int numeroPinne = 3;
+    private int numeroPinne;
 	
 	private String verso = "Fiuu Fiuu";
 	
@@ -11,10 +11,9 @@ private int numeroPinne = 3;
 	
 	//COSTRUTTORE
 	
-	public Delfino (String verso, String cibo) {
+	public Delfino () {
 		
-		this.verso = verso;
-		this.alimentazione = cibo;
+	numeroPinne = 4;
 		
 	}
 	
