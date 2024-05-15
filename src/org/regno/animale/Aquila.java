@@ -2,20 +2,18 @@ package org.regno.animale;
 
 public class Aquila extends Animale{
 	
-private int numeroZampe = 2;
 	
-	private String verso = "Screech";
+    private int numeroZampe = 2;
+	
+	private String verso = "Screech!";
 	
 	private String alimentazione = "carne"; 
 	
 	
 	//COSTRUTTORE
 	
-	public Aquila (String verso, String cibo) {
-		
-		this.verso = verso;
-		this.alimentazione = cibo;
-		
+	public Aquila () {
+	
 	}
 	
 	
@@ -48,7 +46,7 @@ private int numeroZampe = 2;
 
 	@Override
 	public void verso() {
-		System.out.println("il mio verso è lo strido  o grido: " + this.getVerso());
+		System.out.println("il mio verso è lo strido o grido: " + this.getVerso());
 		
 	}
 

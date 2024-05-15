@@ -2,7 +2,7 @@ package org.regno.animale;
 
 public class Passerotto extends Animale {
 	
-private int numeroZampe = 2;
+private int numeroZampe;
 	
 	private String verso = "Pio Pio";
 	
@@ -11,10 +11,9 @@ private int numeroZampe = 2;
 	
 	//COSTRUTTORE
 	
-	public Passerotto (String verso, String cibo) {
+	public Passerotto () {
 		
-		this.verso = verso;
-		this.alimentazione = cibo;
+		numeroZampe = 2;
 		
 	}
 	

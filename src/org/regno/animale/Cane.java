@@ -2,8 +2,9 @@ package org.regno.animale;
 
 public class Cane extends Animale {
 	
+	private String nomeCane;
 	
-	private int numeroZampe = 4;
+	private int numeroZampe;
 	
 	private String verso = "Bau Bau";
 	
@@ -12,10 +13,10 @@ public class Cane extends Animale {
 	
 	//COSTRUTTORE
 	
-	public Cane (String verso, String cibo) {
+	public Cane (String nomeCane) {
 		
-		this.verso = verso;
-		this.alimentazione = cibo;
+		this.setNomeCane(nomeCane);		
+		numeroZampe = 4;
 		
 	}
 	
@@ -44,6 +45,15 @@ public class Cane extends Animale {
 		return numeroZampe;
 	}
 	
+	public String getNomeCane() {
+		return nomeCane;
+	}
+
+
+	public void setNomeCane(String nomeCane) {
+		this.nomeCane = nomeCane;
+	}
+	
 	//METODI VERSO() E MANGIA()
 	
 
@@ -56,6 +66,11 @@ public class Cane extends Animale {
 	@Override
 	public void mangia() {
 		System.out.println("Mangio " + this.getAlimentazione());
+	}
+
+    
+	public void stampaNome() {
+		System.out.println("Mi chiamo: " + this.getNomeCane());
 	}
 
 }
