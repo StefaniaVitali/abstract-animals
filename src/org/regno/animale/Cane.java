@@ -1,6 +1,7 @@
-package java.regno.animale;
+package org.regno.animale;
 
 public class Cane extends Animale {
+	
 	
 	private int numeroZampe = 4;
 	
@@ -10,6 +11,13 @@ public class Cane extends Animale {
 	
 	
 	//COSTRUTTORE
+	
+	public Cane (String verso, String cibo) {
+		
+		this.verso = verso;
+		this.alimentazione = cibo;
+		
+	}
 	
 	
 	//GETTER E SETTER
@@ -41,15 +49,13 @@ public class Cane extends Animale {
 
 	@Override
 	public void verso() {
-		System.out.println("");
+		System.out.println("Abbaio e faccio: " + this.getVerso());
 		
 	}
 
 	@Override
 	public void mangia() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Mangio " + this.getAlimentazione());
 	}
-
 
 }
