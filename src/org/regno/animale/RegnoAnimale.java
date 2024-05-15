@@ -65,5 +65,6 @@ public class RegnoAnimale {
 
 
 // CONSIDERAZIONI SUL CODICE:
-//non posso riassegnare delfino2 se non cambio il tipo di delfino1 da Animale a delfino
+//non posso riassegnare cane3 se non cambio il tipo di cane3 da Animale a Cane, sono due tipi diversi
+//anche se uno Animale è superclasse di Cane
 
