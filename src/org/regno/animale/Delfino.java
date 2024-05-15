@@ -46,7 +46,7 @@ public class Delfino extends Animale{
 	
 	@Override
 	public void verso() {
-		System.out.println("Abbaio e faccio: " + this.getVerso());
+		System.out.println("Fischio e faccio: " + this.getVerso());
 		
 	}
 
@@ -54,6 +54,12 @@ public class Delfino extends Animale{
 	public void mangia() {
 		System.out.println("Mangio " + this.getAlimentazione());
 	}
+	
+	//METODI PROPRIO DI DELFINO
+	public void salvoVite() {
+		System.out.println("Sono amico degli esseri umani e salvo vite quando gli esseri umani sono in pericolo!");
+	}
+	
 
 
 }
