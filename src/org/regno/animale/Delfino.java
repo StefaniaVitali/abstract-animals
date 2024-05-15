@@ -1,6 +1,6 @@
 package org.regno.animale;
 
-public class Delfino extends Animale{
+public class Delfino extends Animale implements INuotanteAnimale{
 	
     private int numeroPinne;
 	
@@ -58,6 +58,13 @@ public class Delfino extends Animale{
 	//METODI PROPRIO DI DELFINO
 	public void salvoVite() {
 		System.out.println("Sono amico degli esseri umani e salvo vite quando gli esseri umani sono in pericolo!");
+	}
+
+
+	@Override
+	public void nuota() {
+		System.out.println("Sto nuotando!!!");
+		
 	}
 	
 

@@ -1,6 +1,6 @@
 package org.regno.animale;
 
-public class Aquila extends Animale{
+public class Aquila extends Animale implements IVolanteAnimale{
 	
 	
     private int numeroZampe = 2;
@@ -54,5 +54,13 @@ public class Aquila extends Animale{
 	public void mangia() {
 		System.out.println("Mangio " + this.getAlimentazione());
 	}
+	
+    //METODO INFERFACCIA IVolanteAnimale
+	@Override
+	public void vola() {
+		System.out.println("Sto volando!!!");
+		
+	}
+
 
 }
