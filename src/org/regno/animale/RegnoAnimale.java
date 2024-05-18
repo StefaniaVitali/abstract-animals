@@ -54,9 +54,7 @@ public class RegnoAnimale {
 		delfino1.dormi();
 		
 		IVolanteAnimale aquila2 = new Aquila();
-		aquila2.vola();
-		
-		
+		aquila2.vola();	
 		
 	}
 
@@ -65,5 +63,6 @@ public class RegnoAnimale {
 
 // CONSIDERAZIONI SUL CODICE:
 //non posso riassegnare cane3 se non cambio il tipo di cane3 da Animale a Cane, sono due tipi diversi
-//anche se Animale è superclasse di Cane
+//anche se Animale è superclasse di Cane.
+//Posso istanziare una nuova aquila dichiarando il tipo come IVolanteAnimale o come aquila per usare il metodo
 
